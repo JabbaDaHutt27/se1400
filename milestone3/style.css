@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0px, 175px)) minmax(0px, 1fr);
+    min-height: 100vh;
+}
+
+header {
+    grid-column: 2 / 8;
+    grid-row: 1;
+    background: rgba(100, 100, 225, 0.3);
+    height: 60px;
+}
+
+.hero {
+    grid-column: 2 / 8;
+    grid-row: 2;
+    background: rgba(225, 100, 100, 0.3);
+    height: 200px;
+}
+
+main {
+    grid-column: 2 / 8;
+    grid-row: 4;
+    background: rgba(225, 225, 100, 0.3);
+    height: 100px;
+}
+
+footer {
+    grid-column: 2 / 8;
+    grid-row: 5;
+    background: rgba(225, 225, 200, 0.3);
+    height: 60px;
+}
