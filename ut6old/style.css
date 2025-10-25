@@ -54,18 +54,6 @@ label {
 	grid-column: 2 / 3;
 }
 
-#bluebar {
-	background-color: #003058;
-	grid-row: 1 / 2;
-	grid-column: 1 / 9;
-}
-
-#greybar {
-	background-color: #424242;
-	grid-row: 2 / 3;
-	grid-column: 1 / 9;
-}
-
 header {
 	grid-row: 1 /2;
 	grid-column: 2 / 8;
@@ -127,7 +115,7 @@ nav {
 
 #homehero {
 	grid-row: 3 / 4;
-	grid-column: 1 / 9;
+	grid-column: 2 / 8;
 	background-image: url("homehero.jpg");
 	background-size: cover;
 	background-position: center;
@@ -137,7 +125,7 @@ nav {
 
 #studenthero {
 	grid-row: 3 / 4;
-	grid-column: 1 / 9;
+	grid-column: 2 / 8;
 	background-image: url("studenthero.jpg");
 	background-size: cover;
 	background-position: center;
@@ -147,7 +135,7 @@ nav {
 
 #facultyhero {
 	grid-row: 3 / 4;
-	grid-column: 1 / 9;
+	grid-column: 2 / 8;
 	background-image: url("facultyhero.jpg");
 	background-size: cover;
 	background-position: center;
