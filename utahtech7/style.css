@@ -50,6 +50,23 @@ h3 {
 	color: #003058;
 }
 
+table {
+
+	margin: 0 auto;
+	border: #424242 1px solid;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	border: #424242 1px solid;
+}
+
+td {
+	text-align: center;
+}
+
 nav a:hover {
 	background-color: #BA1C21;
 }
