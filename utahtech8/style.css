@@ -10,6 +10,11 @@ body {
 	margin: 0;
 }
 
+video {
+	float: right;
+	padding-left: 2em;
+}
+
 main {
 	grid-row: 4 / 5;
 	grid-column: 2 / 8;
@@ -126,6 +131,7 @@ nav a:hover {
 }
 
 nav a {
+	transition: background-color 0.5s ease-out;
 	text-decoration: none;
 	color: #FFFFFF;
 	display: block;
@@ -230,6 +236,14 @@ footer {
 }
 
 @media (max-width: 900px) {
+
+	video{
+		float: none;
+		margin: 0 0 0 0;
+		width: 100%;
+		height: auto;
+	}
+
 	nav {
 		grid-row: 2 / 3;
 		grid-column: 1 / 5;
