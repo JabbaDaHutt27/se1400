@@ -16,7 +16,9 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER/NAV */
+/* ==========================
+   HEADER / NAV
+   ========================== */
 header {
     grid-column: 2 / 8;
     grid-row: 1;
@@ -32,15 +34,16 @@ header {
 
 header img {
     height: 5rem;
-    grid-column: 1;
-    grid-row: 1;
+}
+
+h2, h1 {
+    text-align: center;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     list-style: none;
     gap: 2rem;
 }
@@ -56,12 +59,29 @@ nav a.active {
     font-weight: bold;
 }
 
+/* ==========================
+   GENERAL IMAGE RULES
+   ========================== */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+/* SHOPPING CART GRID */
+#shoppingcart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#shoppingcart img {
+    width: 100%;
+}
+
+/* ==========================
+   HERO SECTION
+   ========================== */
 .hero {
     grid-column: 2 / 8;
     grid-row: 1 / 4;
@@ -71,6 +91,9 @@ img {
     min-height: 300px;
 }
 
+/* ==========================
+   MAIN CONTENT
+   ========================== */
 main {
     grid-column: 3 / 7;
     grid-row: 3 / 7;
@@ -78,7 +101,9 @@ main {
     padding: 2rem;
 }
 
-.card {
+/* CARDS */
+.card,
+.card2 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -90,18 +115,34 @@ main {
     border-radius: 5px;
 }
 
+.card2 {
+    width: 100%;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.card2 img {
+    height: 300px;
+    width: auto;
+    border-radius: 5px;
+}
+
 .row {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .row .card {
     width: calc(50% - 0.5rem);
-    display: flex;
-    flex-direction: column;
 }
 
+/* ==========================
+   FOOTER
+   ========================== */
 footer {
     grid-column: 2 / 8;
     grid-row: 7;
@@ -110,7 +151,13 @@ footer {
     padding: 1rem;
 }
 
+/* =====================================================
+   MEDIA QUERIES
+   ===================================================== */
+
+/* ========== 992px (TABLETS / SMALL LAPTOPS) ========== */
 @media (max-width: 992px) {
+
     #wrapper {
         grid-template-columns: minmax(0px, 1fr) 768px minmax(0px, 1fr);
     }
@@ -123,7 +170,6 @@ footer {
     }
 
     main {
-        grid-column: 2;
         padding: 1.5rem;
     }
 
@@ -131,17 +177,17 @@ footer {
         gap: 1rem;
     }
 
-    @media (max-width: 992px) {
-    .card {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-}
-}
+    /* Fix card layout for medium screens */
+    .card,
+    .card2 {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
+/* ========== 768px (TABLETS / PHONES) ========== */
 @media (max-width: 768px) {
+
     #wrapper {
         grid-template-columns: 1fr;
     }
@@ -154,6 +200,7 @@ footer {
         padding: 1rem;
     }
 
+    /* Header becomes stacked */
     header {
         height: auto;
         padding: 0.75rem 1rem;
@@ -167,29 +214,21 @@ footer {
     }
 
     nav ul {
-    flex-direction: column;
-    gap: 3px;
-    width: 100%;
-  }
-
-  nav a {
-    padding: 0.75rem 0;
-    text-align: center;
-  }
-
-  .row .card {
-        width: 100%; /* full width */
-        padding: 1rem;
-        background: rgb(255, 255, 255);
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        flex-direction: column;
+        gap: 3px;
+        width: 100%;
     }
 
-    .card:last-of-type {
-        margin-bottom: 2.2rem; /* more space below the bottom card */
+    nav a {
+        padding: 0.75rem 0;
+        text-align: center;
     }
 
-    .card {
+    /* Cards full-width */
+    .row .card,
+    .row .card2,
+    .card,
+    .card2 {
         width: 100%;
         padding: 1rem;
         background: #ffffff;
@@ -198,8 +237,12 @@ footer {
         margin-bottom: 1rem;
     }
 
-  .hero {
-    min-height: 200px;
-    background-position: center;
-  }
+    .card:last-of-type {
+        margin-bottom: 2.2rem;
+    }
+
+    .hero {
+        min-height: 200px;
+        background-position: center;
+    }
 }
