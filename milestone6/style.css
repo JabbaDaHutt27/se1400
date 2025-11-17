@@ -36,7 +36,8 @@ header img {
     height: 5rem;
 }
 
-h2, h1 {
+h2,
+h1 {
     text-align: center;
 }
 
@@ -120,7 +121,7 @@ main {
     padding: 1rem;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
 }
 
@@ -192,7 +193,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    header, .hero, main, footer {
+    header,
+    .hero,
+    main,
+    footer {
         grid-column: 1;
     }
 
@@ -233,7 +237,7 @@ footer {
         padding: 1rem;
         background: #ffffff;
         border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         margin-bottom: 1rem;
     }
 

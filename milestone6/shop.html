@@ -10,13 +10,13 @@
 
 <body>
     <script>
-  window.SnipcartSettings = {
-publicApiKey: "MTlmM2VkZDEtMTRjZi00ZWExLTg2MjktMzExYmQ3NWQzNmQwNjM4OTgzOTE3MDU0MjMxMzYx",
-loadStrategy: "on-user-interaction",
-  };
+        window.SnipcartSettings = {
+            publicApiKey: "MTlmM2VkZDEtMTRjZi00ZWExLTg2MjktMzExYmQ3NWQzNmQwNjM4OTgzOTE3MDU0MjMxMzYx",
+            loadStrategy: "on-user-interaction",
+        };
 
-  (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
-</script>
+        (function () { var c, d; (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0"); var s, S; (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750); var l, p; (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com"); var w, u; (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https"); var m, g; (g = (m = window.SnipcartSettings).loadCSS) != null || (m.loadCSS = !0); var y = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, { numeric: !0, sensitivity: "base" }) === -1, f = ["focus", "mouseover", "touchmove", "scroll", "keydown"]; window.LoadSnipcart = o; document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r(); function r() { window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (f.forEach(function (t) { return document.addEventListener(t, o) }), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o() } var a = !1; function o() { if (a) return; a = !0; let t = document.getElementsByTagName("head")[0], n = document.querySelector("#snipcart"), i = document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, '"][src$="snipcart.js"]')), e = document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, '"][href$="snipcart.css"]')); n || (n = document.createElement("div"), n.id = "snipcart", n.setAttribute("hidden", "true"), document.body.appendChild(n)), h(n), i || (i = document.createElement("script"), i.src = "".concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, "/themes/v").concat(window.SnipcartSettings.version, "/default/snipcart.js"), i.async = !0, t.appendChild(i)), !e && window.SnipcartSettings.loadCSS && (e = document.createElement("link"), e.rel = "stylesheet", e.type = "text/css", e.href = "".concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, "/themes/v").concat(window.SnipcartSettings.version, "/default/snipcart.css"), t.prepend(e)), f.forEach(function (v) { return document.removeEventListener(v, o) }) } function h(t) { !y || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl)) } })();
+    </script>
     <div id="wrapper">
         <!-- HEADER/NAV -->
         <header>
@@ -38,55 +38,66 @@ loadStrategy: "on-user-interaction",
             <h1>Shop</h1><br>
             <div class="card">
                 <p> Welcome to the Shop page! Here, you can find various coin collecting
-                     supplies and merchandise to enhance your collecting experience. We will soon offer a 
-                    range of products, from coin holders and albums to books and tools. But for now, browse 
-                through our current selection and find the perfect items to add to your collection!</p><br>
-                     </div>
+                    supplies and merchandise to enhance your collecting experience. We will soon offer a
+                    range of products, from coin holders and albums to books and tools. But for now, browse
+                    through our current selection and find the perfect items to add to your collection!</p><br>
+            </div>
 
-                     <div class="card2" style="border: 2px solid black;">
-  <img src="images/scaleimage.jpg" class="" alt="Coin Scale">
-  <h3>Coin Scale</h3>
-  <p>Digital 200g Coin Scale</p>
-  <p>$14.99</p>
-  <button class="snipcart-add-item"
-    data-item-id="coin-scale"
-    data-item-price="14.99"
-    data-item-description="Digital 200g Coin Scale"
-    data-item-image="images/scaleimage.jpg"
-    data-item-name="Coin Scale">
-    Add to cart
-  </button>
-</div><br><br>
+            <div class="card2" style="border: 2px solid black;">
+                <img src="images/scaleimage.jpg" class="" alt="Coin Scale">
+                <h3>Coin Scale</h3>
+                <p>Digital 200g Coin Scale (minimum weight 0.1g)- Great for weighing your precious
+                    metals!
+                </p>
+                <p>$14.99</p>
+                <button class="snipcart-add-item" data-item-id="coin-scale" data-item-price="14.99"
+                    data-item-description="Digital 200g Coin Scale" data-item-image="images/scaleimage.jpg"
+                    data-item-name="Coin Scale">
+                    Add to cart
+                </button>
+            </div><br><br>
 
-<div class="card2" style="border: 2px solid black;">
-<img src="images/digitalcaliper.jpg" class="" alt="Digital Caliper">
-  <h3>Digital Caliper</h3>
-  <p>Digital Coin Caliper for checking coin diameter</p>
-  <p>$14.99</p>
-  <button class="snipcart-add-item"
-    data-item-id="digital-caliper"
-    data-item-price="17.99"
-    data-item-description="Digital Coin Caliper for checking coin diameter"
-    data-item-image="images/digitalcaliper.jpg"
-    data-item-name="Digital Caliper">
-    Add to cart
-  </button>
-</div><br><br>
+            <div class="card2" style="border: 2px solid black;">
+                <img src="images/digitalcaliper.jpg" class="" alt="Digital Caliper">
+                <h3>Digital Caliper</h3>
+                <p>Digital Coin Caliper for checking coin diameter- Great for rooting out fake coins!</p>
+                <p>$14.99</p>
+                <button class="snipcart-add-item" data-item-id="digital-caliper" data-item-price="17.99"
+                    data-item-description="Digital Coin Caliper for checking coin diameter"
+                    data-item-image="images/digitalcaliper.jpg" data-item-name="Digital Caliper">
+                    Add to cart
+                </button>
+            </div><br><br>
 
-<div class="card2" style="border: 2px solid black;">
-  <img src="images/nicadate.jpg" class="" alt="Nic-a-Date">
-  <h3>Nic-a-Date</h3>
-  <p>Nic-a-Date coin solution for revealing the date on a coin.</p>
-  <p>$12.99</p>
-  <button class="snipcart-add-item"
-    data-item-id="nic-a-date"
-    data-item-price="12.99"
-    data-item-description="Nic-a-Date coin solution for revealing the date on a coin."
-    data-item-image="images/nicadate.jpg"
-    data-item-name="Nic-a-Date">
-    Add to cart
-  </button>
-</div><br><br>
+            <div class="card2" style="border: 2px solid black;">
+                <img src="images/nicadate.jpg" class="" alt="Nic-a-Date">
+                <h3>Nic-a-Date</h3>
+                <p>Nic-a-Date coin solution for revealing the date on a coin. - Perfect for
+                    old or worn nickels!
+                    <br> Warning: This product is an acid and should be handled with care. Follow all safety
+                    instructions provided with the product to avoid damage to coins or harm to yourself.
+                </p>
+                <p>$12.99</p>
+                <button class="snipcart-add-item" data-item-id="nic-a-date" data-item-price="12.99"
+                    data-item-description="Nic-a-Date coin solution for revealing the date on a coin."
+                    data-item-image="images/nicadate.jpg" data-item-name="Nic-a-Date">
+                    Add to cart
+                </button>
+            </div><br><br>
+
+            <div class="card2" style="border: 2px solid black;">
+                <img src="images/coinbook.jpg" class="" alt="Coin Grading Book">
+                <h3>Coin Grading Book</h3>
+                <p>8 1/2 x 11in Coin Grading Book 127 pages written by Chicago Joe- The perfect
+                    coin collector's tool! Besides quarters, it works on dimes, nickels, dollar
+                    coins, and pennies too. </p>
+                <p>$23.99</p>
+                <button class="snipcart-add-item" data-item-id="Coin Grading Book" data-item-price="23.99"
+                    data-item-description="8 1/2 x 11in Coin Grading Book 127 pages"
+                    data-item-image="images/coinbook.jpg" data-item-name="Coin Grading Book">
+                    Add to cart
+                </button>
+            </div>
 
 
         </main>
